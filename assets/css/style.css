@@ -1,0 +1,87 @@
+/* ------ GENERAL ------ */
+
+body {
+  /* Utilisation de la font importée */
+  font-family: TS-Reg, sans-serif;
+}
+
+/* --------------------- */
+/* ------- HEADER ------ */
+/* --------------------- */
+
+header {
+  width: 1024px;
+  margin: 20px auto;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+header .left-container {
+  display: flex;
+  flex-direction: row;
+}
+
+header div img {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  vertical-align: auto;
+}
+
+nav menu {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.menuitem {
+  display: flex;
+  flex-direction: row;
+  padding: 6px;
+  height: 40px;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+nav .button {
+  height: 40px;
+  padding: 6px;
+  background-color: black;
+  color: white;
+}
+
+/* --------------------- */
+/* -------- MAIN ------- */
+/* --------------------- */
+
+main {
+  width: 1024px;
+  margin: 20px auto;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+/* --------------------- */
+/* ------- FOOTER ------ */
+/* --------------------- */
+
+footer {
+  margin: 20px auto;
+  display: flex;
+  background-color: #faf1ed;
+  justify-content: space-between;
+}
+
+footer .container {
+  width: 1024px;
+  margin: 20px auto;
+}
