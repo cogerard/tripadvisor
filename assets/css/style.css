@@ -1,8 +1,43 @@
+/* --------------------- */
 /* ------ GENERAL ------ */
+/* --------------------- */
 
 body {
   /* Utilisation de la font importée */
   font-family: TS-Reg, sans-serif;
+}
+
+button {
+  font-family: TS-Reg, sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: TS-Med;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: TS-Med;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: TS-Med;
+  font-size: 30px;
+}
+
+button {
+  height: 40px;
+  padding: 6px 20px;
+  background-color: black;
+  border: black;
+  color: white;
+  border-radius: 20px;
+}
+
+button:hover {
+  opacity: 75%;
 }
 
 /* --------------------- */
@@ -10,8 +45,9 @@ body {
 /* --------------------- */
 
 header {
-  width: 1024px;
-  margin: 20px auto;
+  width: 1136px;
+  height: 60px;
+  margin: 10px auto;
   display: flex;
   background-color: #fff;
   justify-content: space-between;
@@ -29,33 +65,33 @@ header div img {
   align-content: center;
 }
 
-nav {
+header nav {
   display: flex;
   flex-direction: row;
   gap: 6px;
-  vertical-align: auto;
+  align-items: center;
 }
 
-nav menu {
+header nav menu {
   display: flex;
   flex-direction: row;
-  gap: 6px;
+  gap: 10px;
+  padding-right: 6px;
 }
 
-.menuitem {
+header .menuitem {
   display: flex;
   flex-direction: row;
   padding: 6px;
   height: 40px;
   gap: 6px;
-  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 }
 
-nav .button {
-  height: 40px;
-  padding: 6px;
-  background-color: black;
-  color: white;
+header .menuitem:hover {
+  background-color: lightgrey;
 }
 
 /* --------------------- */
@@ -63,11 +99,126 @@ nav .button {
 /* --------------------- */
 
 main {
-  width: 1024px;
-  margin: 20px auto;
-  display: flex;
+  width: 1136px;
+  margin: 40px auto;
   background-color: #fff;
   justify-content: space-between;
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+
+/* ------- SUBMENU ------ */
+
+main .submenu {
+  display: flex;
+  margin: 35px 0 25px 0;
+  gap: 10px;
+}
+
+main .submenu div {
+  display: flex;
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 20px 15px;
+  flex: 1;
+  justify-content: space-between;
+  margin: 0px 0px 0 0;
+}
+
+main .submenu div:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ------- PICTURES ------ */
+
+main picture {
+  display: flex;
+}
+
+main picture .column1 img {
+  width: 654px;
+  height: 430px;
+  object-fit: cover;
+  margin-right: 2px;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.column2 img {
+  width: 480px;
+  height: 214px;
+  object-fit: cover;
+}
+
+.column2 :first-child {
+  margin-bottom: 2px;
+}
+
+/* ----- PICTURES NAV ---- */
+
+main .pictures-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+main .pictures-nav .left-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+main .pictures-nav .left-container div {
+  display: flex;
+}
+
+main .pictures-nav .left-container div i {
+  margin: 0 6px;
+}
+
+main .pictures-nav {
+  font-size: 12px;
+}
+
+/* --- 2 COLUMNS BLOCK --- */
+
+main .two-columns-block {
+  display: flex;
+  margin-top: 20px;
+  line-height: 1.3;
+}
+
+main .two-columns-block .left-column {
+  flex: 3;
+}
+
+main .two-columns-block .left-column p {
+  padding: 20px 100px 20px 0;
+}
+
+main .two-columns-block .right-column .red-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 450px;
+  background-color: #fe5e5e;
+  border-radius: 10px 10px 0 0;
+  padding: 40px;
+  gap: 20px;
+}
+
+main .two-columns-block .right-column img {
+  width: 450px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
 }
 
 /* --------------------- */
