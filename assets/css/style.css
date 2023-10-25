@@ -12,11 +12,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  font-family: TS-Reg, sans-serif;
-  font-size: 14px;
-}
-
 h1 {
   font-family: TS-Med;
   font-size: 50px;
@@ -49,6 +44,8 @@ button {
   border: black;
   color: white;
   border-radius: 20px;
+  font-family: TS-Reg, sans-serif;
+  font-size: 15px;
 }
 
 button:hover {
@@ -64,11 +61,22 @@ section {
 /* --------------------- */
 
 header {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  border-bottom: solid 1px lightgrey;
+  z-index: 1;
+}
+
+header .macro-container {
+  display: flex;
   width: 1136px;
   height: 60px;
-  margin: 10px auto;
-  display: flex;
-  background-color: #fff;
+  margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -119,7 +127,7 @@ header .menuitem:hover {
 
 main {
   width: 1136px;
-  margin: 40px auto;
+  margin: 100px auto;
   background-color: #fff;
   justify-content: space-between;
 }
@@ -243,7 +251,7 @@ main .two-columns-block .right-column img {
 /* ---- FIRST SLIDER ---- */
 
 section h2 {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .slider-container {
@@ -259,7 +267,7 @@ section h2 {
   font-size: 18px;
   line-height: 1.3;
   gap: 20px;
-  margin-right: 20px;
+  margin: 0 20px 20px 0;
 }
 
 .slider-side a {
@@ -279,30 +287,37 @@ section h2 {
   flex-direction: column;
   height: 310px;
   width: 270px;
-  margin-right: 10px;
+  margin-right: 15px;
   gap: 10px;
   line-height: 1.2;
   position: relative;
 }
 
 .slider-block .circle {
-  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
   border-radius: 100%;
   position: absolute;
   height: 40px;
   width: 40px;
   top: 10px;
   right: 10px;
-  z-index: 99;
+  font-size: 16px;
 }
 
-.slider-block .circle i {
-  height: 24px;
-  width: 24px;
+.slider-block .badge {
   position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 155px;
+  left: 2px;
+  font-size: 16px;
 }
 
 .slider-block img .photo {
+  object-fit: cover;
   object-fit: cover;
 }
 
@@ -310,12 +325,20 @@ section h2 {
   font-size: 14px;
 }
 
+/* --- SPE 2nd SLIDER --- */
+
+.slider-container-2 {
+  display: flex;
+  height: 350px;
+  width: 100%;
+}
+
 /* --------------------- */
 /* ------- FOOTER ------ */
 /* --------------------- */
 
 footer {
-  margin: 20px auto;
+  margin: 20px auto 0px;
   display: flex;
   background-color: #faf1ed;
   justify-content: space-between;
@@ -323,5 +346,17 @@ footer {
 
 footer .container {
   width: 1024px;
-  margin: 20px auto;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+footer a {
+  font-family: TS-Med;
 }
