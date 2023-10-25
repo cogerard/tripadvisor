@@ -7,6 +7,11 @@ body {
   font-family: TS-Reg, sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 button {
   font-family: TS-Reg, sans-serif;
   font-size: 14px;
@@ -19,12 +24,22 @@ h1 {
 
 h2 {
   font-family: TS-Med;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 h3 {
   font-family: TS-Med;
-  font-size: 30px;
+  font-size: 32px;
+}
+
+h4 {
+  font-family: TS-Med;
+  font-size: 24px;
+}
+
+h5 {
+  font-family: TS-Med;
+  font-size: 18px;
 }
 
 button {
@@ -38,6 +53,10 @@ button {
 
 button:hover {
   opacity: 75%;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 /* --------------------- */
@@ -75,14 +94,14 @@ header nav {
 header nav menu {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   padding-right: 6px;
 }
 
 header .menuitem {
   display: flex;
   flex-direction: row;
-  padding: 6px;
+  padding: 6px 10px;
   height: 40px;
   gap: 6px;
   justify-content: center;
@@ -219,6 +238,72 @@ main .two-columns-block .right-column img {
   height: 150px;
   object-fit: cover;
   border-radius: 0 0 10px 10px;
+}
+
+/* ---- FIRST SLIDER ---- */
+
+section h2 {
+  margin-bottom: 24px;
+}
+
+.slider-container {
+  display: flex;
+  height: 310px;
+  width: 100%;
+}
+
+.slider-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 1.3;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.slider-side a {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.slider {
+  flex: 3;
+  display: flex;
+  overflow: scroll hidden;
+}
+
+.slider-block {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  height: 310px;
+  width: 270px;
+  margin-right: 10px;
+  gap: 10px;
+  line-height: 1.2;
+}
+
+.slider-block .circle {
+  background-color: green;
+  border-radius: 100%;
+  position: relative;
+  top: 35px;
+  right: -245px;
+  z-index: 99;
+}
+
+.slider-block .circle i {
+  height: 24px;
+  width: 24px;
+}
+
+.slider-block img .photo {
+  object-fit: cover;
+}
+
+.slider-block p {
+  font-size: 14px;
 }
 
 /* --------------------- */
