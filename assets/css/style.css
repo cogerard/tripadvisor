@@ -142,9 +142,24 @@ main .submenu {
   display: flex;
   margin: 35px 0 25px 0;
   gap: 10px;
+  width: 100%;
+  /* border: solid 1px blue; */
 }
 
-main .submenu div {
+main .submenu-part {
+  display: flex;
+  gap: 10px;
+}
+
+.one {
+  width: 66.6%;
+}
+
+.two {
+  width: 33.3%;
+}
+
+main .submenu-part div {
   display: flex;
   border: solid;
   border-color: black;
@@ -156,9 +171,13 @@ main .submenu div {
   margin: 0px 0px 0 0;
 }
 
-main .submenu div:hover {
+main .submenu-part div:hover {
   background-color: black;
   color: white;
+}
+
+main .submenu-part .Visible-S-XS {
+  display: none;
 }
 
 /* ------- PICTURES ------ */
@@ -227,7 +246,7 @@ main .two-columns-block .left-column {
 }
 
 main .two-columns-block .left-column p {
-  padding: 20px 100px 20px 0;
+  padding: 0px 100px 0px 0;
 }
 
 main .two-columns-block .right-column .red-block {
@@ -279,6 +298,12 @@ section h2 {
   flex: 3;
   display: flex;
   overflow: scroll hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
 }
 
 .slider-block {
@@ -333,6 +358,15 @@ section h2 {
   width: 100%;
 }
 
+.slider-container-2 .badge {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 220px;
+  left: 2px;
+  font-size: 16px;
+}
+
 /* --------------------- */
 /* ------- FOOTER ------ */
 /* --------------------- */
@@ -359,4 +393,58 @@ footer img {
 
 footer a {
   font-family: TS-Med;
+}
+
+/* ---------------------------- */
+/* ------ MEDIA QUERIES ------- */
+/* ---------------------------- */
+
+/* 1184px, 1024px et 768px */
+
+/* 1184 px */
+
+@media (max-width: 1184px) {
+  main {
+    width: 100vw;
+    padding: 0px 20px;
+  }
+
+  .submenu {
+    /* Pour avoir un repère visuel et ne pas avoir besoin de constament regarder la règle */
+    /* background-color: lightblue; */
+    flex-wrap: wrap;
+  }
+  main .submenu-part .Visible-S-XS {
+    display: flex;
+    /* border: solid 1px red; */
+  }
+
+  .one {
+    width: 100%;
+  }
+
+  .two {
+    width: 100%;
+  }
+}
+
+/* 768 px */
+
+@media (max-width: 768px) {
+  .submenu {
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll hidden;
+  }
+
+  .submenu-part {
+    flex-shrink: 0;
+    display: flex;
+  }
+
+  .submenu-part div {
+    min-width: 150px;
+    justify-content: flex-start;
+  }
 }

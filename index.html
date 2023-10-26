@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <!-- Ajout des feuilles de style -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Ajout du favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/img/tripadvisor-icon.svg">
     <!-- Import de la font -->
      <link rel="stylesheet" href="./assets/css/font.css" />
-     <!-- Import des icônes -->
+    <!-- Import des icônes fontawesome -->
     <script src="https://kit.fontawesome.com/f4ca18b024.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Tripadvisor</title>
   </head>
 
@@ -36,21 +40,29 @@
     </header>
 
     <main>
-        <section>
+        <section class="top-section">
             <h1><span>Explorez</span> Paris</h1>
             <nav class="submenu">
-                <div><p>Hôtels</p><i class="fa-solid fa-bed"></i></i></div>
-                <div><p>Activités</p><i class="fa-solid fa-ticket"></i></div>
-                <div><p>Locations de vacances</p><i class="fa-solid fa-house-lock"></i></div>
-                <div><p>Restaurants</p><i class="fa-solid fa-utensils"></i></div>
-                <div><p>Forums de voyage</p><i class="fa-solid fa-comments"></i></div>
-                <div><p>Plus</p><i class="fa-solid fa-ellipsis"></i></div>
+                <div class="submenu-part one">
+                    <div><p>Hôtels</p><i class="fa-solid fa-bed"></i></i></div>
+                    <div><p>Activités</p><i class="fa-solid fa-ticket"></i></div>
+                    <div><p>Locations de vacances</p><i class="fa-solid fa-house-lock"></i></div>
+                    <div><p>Restaurants</p><i class="fa-solid fa-utensils"></i></div>
+                </div>
+                <div class="submenu-part two">
+                    <div><p>Forums de voyage</p><i class="fa-solid fa-comments"></i></div>
+                    <div class="Visible-S-XS"><p>Vols</p><i class="fa-solid fa-comments"></i></div>
+                    <div class="Visible-S-XS"><p>Croisières</p><i class="fa-solid fa-comments"></i></div>
+                    <div><p>Plus</p><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
             </nav>
+
             <picture>
                 <div class="column1"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/86/0e/caption.jpg?w=700&h=500&s=1" alt="Paris bords de Seine"></div>
                 <div class="column2"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/58/8c/caption.jpg?w=500&h=300&s=1&cx=2441&cy=1123&chk=v1_140b80ad3746180d2cb8" alt="Couple en moto devant le parc du Luxembourg">
                     <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/59/86/caption.jpg?w=500&h=300&s=1" alt="Tour Eiffel depuis les fontaines du Trocadero"></div>
             </picture>
+
             <nav class="pictures-nav">
                 <div class="left-container">
                     <div><p>Europe</p><i class="fa-solid fa-angle-right"></i></i></div>
@@ -62,6 +74,7 @@
                     <p>Visiter : Paris</p>
                 </div>
             </nav>
+
             <div class="two-columns-block">
                 <div class="left-column">
                     <h2>À propos de Paris</h2>
@@ -76,7 +89,9 @@
                     <img src="./assets/img/maps_cnuhsr.png" alt="Carte de Paris">
                 </div>
             </div>
+
         </section>
+
         <section class="slider-1">
             <h2>Paris : les immanquables</h2>
             <div class="slider-container">
@@ -110,7 +125,7 @@
                         </div>
                         <img class="badge" src="./assets/img/Tripavsisor-badge.svg" alt="Tripadvisor badge">
                         <img class="photo" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=400&h=300&s=1" alt="Arc de Triomphe">
-                        <h5>L'Arc de Trimphe</h5>
+                        <h5>L'Arc de Triomphe</h5>
                         <p>Bâtiments architecturaux, Sites historiques</p>
                     </div>
                     <div class= "slider-block">
@@ -134,6 +149,7 @@
                 </div>
             </div>
         </section>
+
         <section class="slider-2">
             <h2>Explorez Paris en fonction de vos centres d'intérêt</h2>
             <div class = "slider-side">
